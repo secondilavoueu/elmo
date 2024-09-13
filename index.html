@@ -3,43 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-<!-- coloque seus dados pra concorrer ao premio  -->
+
+
+<div class="navbar">
+    <div class="elementos-nav">
+    <a href="#"> lalala</a>
+    <a href="index.html"> Home</a>
+    <a href="#"> lalala</a>
+    </div>
+</div>
 
 <div class="title">
-
+    
     <h1> Cadastre seus dados e concorra a um pacote de livros surpresa!</h1>
 
 </div>
 
+<img src="elmoo.gif" class="elmo">
 <div class="container">
 <form method="post" action="processamento.php" class="form">
     
-    <label for="nome" class="label"> Nome completo:</label>
-    <input type="text" name="nome"><br>
+    <label for="nome"> Nome completo:</label><br />
+    <input type="text" name="nome" required><br>
 
-    <label for="email" class="label"> Email:</label>
-    <input type="text" name="email"><br />
+    <label for="email"> Email:</label><br />
+    <input type="text" name="email" required><br />
     
     
-    <label for="datanascimento" class="label"> Data de nascimento:</label>
-    <input type="date" name="datanascimento"><br />
+    <label for="datanascimento"> Data de nascimento:</label>
+    <input type="date" name="datanascimento" required><br />
     
-    <label for="genero" class="label">Gênero:</label>
-    <input type="text" name="genero">
-    <select id="genero" name="genero" class="select">
+    <label for="genero">Gênero:</label>
+    <select id="genero" name="genero" class="select" required>
         <option value="masculino">Masculino</option>
         <option value="feminino">Feminino</option>
         <option value="outros">Outros</option>
     </select>
 <br>
 
-    <label for="biografia" class="label">Biografia:</label>
-    <input type="textarea" name="biografia"><br />
+    <label for="biografia">Biografia:</label>
+    <textarea rows="7" cols="50"name="biografia" placeholder="conte-nos um pouco sobre você!" required></textarea><br />
 
     <br>
     <button type="submit" class="submit-button">Cadastrar</button>

@@ -8,9 +8,13 @@ body {
     margin: 0;
     background-color: #f4f4f9;
 }
+
+title{
+   position: relative;
+}
 h1 {
     font-size: 44px;
-    margin-top: 200px;
+    top: 2000px;
     color: #333;
 }
 form {
@@ -21,12 +25,9 @@ form {
     max-width: 400px;
     width: 100%;
 }
-label {
-    font-size: 16px;
-    margin-bottom: 10px;
-    display: block;
-}
-select, input[type="date"] {
+
+
+select, input {
     width: 100%;
     padding: 8px;
     font-size: 16px;
@@ -46,3 +47,34 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
+.elmo{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    bottom: 20px;
+}
+
+.navbar{
+    position: relative;
+    top:-90px;
+    background-color: #f59b9e;
+    width: 100%;
+    height: 90px;
+    border-radius: 10px;
+
+  }
+.elementos-nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+    
+}
+.navbar a{
+    margin:0 300px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+ 

@@ -1,0 +1,19 @@
+create database premio;
+use premio;
+
+create table cadastro(
+nome varchar(255) primary key,
+email varchar(255),
+datanascimento datetime,
+genero
+
+);
+
+<!-- coloque seus dados pra concorrer ao premio  
+
+ideias para o site:
+
+- digite seus dados e saiba qual livro combina com vc
+- '' para participar da nova minissérie da globo pe de chinesa
+- 
+-->
