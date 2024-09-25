@@ -29,17 +29,17 @@
 <form method="post" action="processamento.php" class="form">
     
     <label for="nome"> Nome completo:</label><br />
-    <input type="text" name="nome" required><br>
+    <input type="text" name="nome"><br>
 
     <label for="email"> Email:</label><br />
-    <input type="text" name="email" required><br />
+    <input type="text" name="email"><br />
     
     
     <label for="datanascimento"> Data de nascimento:</label>
-    <input type="date" name="datanascimento" required><br />
+    <input type="date" name="datanascimento"><br />
     
     <label for="genero">Gênero:</label>
-    <select id="genero" name="genero" class="select" required>
+    <select id="genero" name="genero" class="select" >
         <option value="masculino">Masculino</option>
         <option value="feminino">Feminino</option>
         <option value="outros">Outros</option>
@@ -47,10 +47,10 @@
 <br>
 
     <label for="biografia">Biografia:</label>
-    <textarea rows="7" cols="50"name="biografia" placeholder="conte-nos um pouco sobre você!" required></textarea><br />
+    <textarea rows="7" cols="50"name="biografia" placeholder="conte-nos um pouco sobre você!" ></textarea><br />
 
     <br>
-    <button type="submit" class="submit-button">Cadastrar</button>
+    <button type="submit" class="submit-button" href="/processamento">Cadastrar</button>
 </form>
 
 </div>

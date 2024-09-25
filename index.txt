@@ -17,3 +17,22 @@ ideias para o site:
 - '' para participar da nova minissérie da globo pe de chinesa
 - 
 -->
+
+Processamento em PHP e Exibição de Alertas:
+o Ao submeter o formulário, crie um arquivo PHP que:
+
+▪ Valide se todos os campos foram preenchidos. Se algum campo
+estiver vazio, exiba um alerta (em PHP) com a mensagem de
+erro.
+▪ Se os dados estiverem corretos, exiba um alerta de sucesso
+informando que o cadastro foi concluído.
+▪ Todos os alertas devem aparecer na página com o uso de echo
+ou print para exibir mensagens ao usuário.
+
+3. Validações:
+o O formulário deve validar que todos os campos obrigatórios foram
+preenchidos.
+o Validação adicional em PHP para verificar se o e-mail é válido e se o
+nome contém ao menos dois nomes.
+o Caso algum campo não seja validado corretamente, exiba uma
+mensagem de erro ao usuário utilizando alertas.
