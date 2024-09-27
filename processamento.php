@@ -1,4 +1,3 @@
-<!-- -->
 
 <?php
 
@@ -13,12 +12,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
  }
 //Valide se todos os campos foram preenchidos. Se algum campo estiver vazio, exiba um alerta (em PHP) com a mensagem de erro.
-if (empty($nome, $email, $datanascimento, $genero, $biografia)){ 
-    echo "<script>alert('Este campo está vazio! Preencha corretamente.');</script>"; // alerta em php com html e js
- } else{  
-    echo "<script>alert('Dados cadastrados com sucesso!');</script>";
- }
-
+if (empty($nome) || empty($email) || empty($datanascimento) || empty($genero) || empty($biografia)) {
+   echo "<script>alert('Todos os campos devem ser preenchidos corretamente.');</script>";
+} else {
+   echo "<script>alert('Dados cadastrados com sucesso!');</script>"; //alerta 
+}
  //Validação adicional em PHP para verificar se o e-mail é válido 
 
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
