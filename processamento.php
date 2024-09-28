@@ -3,17 +3,15 @@
 
 //chamando os dados atraves do post
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nome=$_POST=['nome'];
-    $email=$_POST=['email'];
-    $datanascimento=$_POST=['datanascimento'];
-    $genero=$_POST=['genero'];
-    $biografia=$_POST=['biografia'];
+   $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $datanascimento = $_POST['datanascimento'];
+    $genero = $_POST['genero'];
+    $biografia = $_POST['biografia'];
 
- }
-//Valide se todos os campos foram preenchidos. Se algum campo estiver vazio, exiba um alerta (em PHP) com a mensagem de erro.
+//validando se todos os campos foram preenchidos
 if (empty($nome) || empty($email) || empty($datanascimento) || empty($genero) || empty($biografia)) {
-   echo "<script>alert('Todos os campos devem ser preenchidos corretamente.');</script>";
+   echo "<script>alert('Todos os campos devem ser preenchidos corretamente.');</script>"; // exibindo um alerta com mensagem de erro caso algum campo esteja vazio
 } else {
    echo "<script>alert('Dados cadastrados com sucesso!');</script>"; //alerta 
 }
@@ -23,7 +21,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
     echo"Email inválido! Preencha corretamente";
 }
 
- //se o nome contém ao menos dois nomes.
+ //validação para ver se o nome contém ao menos dois nomes.
 
  //a principio pensei me usar count ou strlen, mas o gpt me mostrou como fazer do jeito certo:
 
@@ -35,7 +33,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
     echo"Preencha com pelo menos dois nomes!";
  }
 
- header("Location: surpresa.html"); // funçao que, apos o processamento de dados redirecionara o usuario para a pagina de surpresa
+ header("Location: surpresa.html"); // função que, após o processamento de dados redirecionara o usuario para a pagina de surpresa
  exit;
 
 
